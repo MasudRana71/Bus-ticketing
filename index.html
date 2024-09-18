@@ -14,7 +14,7 @@
     <!-- custom stylesheets -->
      <link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="mx-10 my-3">
+<body class="m-0 p-0">
         <!-- navbar section start  -->
     <div class="navbar bg-base-100 px-20">
             <div class="navbar-start">
@@ -34,7 +34,7 @@
     </div>
         <!-- navbar end  -->
         <!-- banner section start  -->
-    <section class="">
+    <section class="px-14 ">
         <div class=" my-3 bg-[url(images/banner.png)] bg-no-repeat ml-10  ">
             <div class="pt-20 flex flex-col">
                 <h1 class="text-6xl text-white font-extrabold text-center m-5">End-to-End Travel with</h1>
@@ -43,7 +43,7 @@
                    integrated testing features allow for a streamlined .
                 </p>
                 <div class="flex justify-center m-16">
-                    <button class="btn text-black bg-green-600 justify-center ">Buy Tickets</button>
+                    <button class="btn  bg-green-600">Buy Tickets</button>
                 </div>
             </div>
             <div class="flex justify-center ">
@@ -109,13 +109,11 @@
                <div class=" absolute w-[37px] ml-[680px]"><img src="images/cupon-devider.png" alt=""></div>
             </div>
             <div class="flex justify-center my-16">
-                <button class="btn btn-outline btn-success">See All Offers</button>
+                <button class="btn  bg-green-600">See All Offers</button>
             </div>
         </div>
     </section>
-                <!-- best offer section end-->
-                <!-- main tickiting section end -->
-
+        <!-- best offer section end-->
         <!-- main tickiting section start  -->
     <section>
             <!-- ticketing header  -->
@@ -165,17 +163,19 @@
                         <h1 class="text-3xl font-bold">550 Taka</h1>
                         <p class="text-gray-500 text-lg pl-6">Per Seat</p>
                     </div>
-                    <div class=" absolute  w-[76px] mt-0 pt-0 ml-[850px]"><img src="images/info-devider.png" alt=""></div>
+                    <div class=" absolute  w-[76px] mt-0 pt-0 ml-[935px]"><img src="images/info-devider.png" alt=""></div>
                 </div>
         </div>
     </section>
+        <!-- main tickiting section end  -->
+        <!-- tickiting section start -->
     <section>
         <div class="flex  bg-slate-200 justify-between mx-20 rounded-2xl mt-10">
             <!-- seats  -->
-            <div class=" grow mr-8 ml-4" >
-               <div class="flex flex-col">
-                    <h1 class="text-lg text-black font-bold border-dotted border-gray-400 border-b-2 p-4">Select Your Seat</h1>
-                    <div class="flex justify-between border-dotted border-gray-400 border-b-2 p-4">
+            <div class=" grow mr-8 ml-4 " >
+               <div class="flex flex-col  p-5 ">
+                    <h1 class="text-lg text-black font-bold border-dotted border-gray-300 border-b-2 p-4">Select Your Seat</h1>
+                    <div class="flex justify-between border-dotted border-gray-300 border-b-2 p-4">
                         <div class="flex" >
                             <span><img src="images/seat-gray.png" alt=""></span>
                             <p class="mx-2 font-bold">Available</p>
@@ -263,13 +263,13 @@
                </div>
             </div>
             <!-- calculate -->
-            <div class="flex flex-col w-96 border-dotted border-l-2 border-gray-400">
+            <div class="flex flex-col w-96 border-dotted border-l-2 border-gray-400 p-5">
                 <div>
-                    <h1 class="text-lg text-black font-bold border-dotted border-gray-400 border-b-2 p-4" >Select Your Seat</h1>
+                    <h1 class="text-lg text-black font-bold border-dotted border-gray-300 border-b-2 p-5 mb-3 " >Select Your Seat</h1>
                 </div>
-                <div class="flex flex-col">
-                    <div class=" bg-slate-300">
-                        <div class=" flex justify-between border-gray-400 border-dotted border-b-2 p-4">
+                <div class="flex flex-col ">
+                    <div class=" bg-slate-300 rounded-xl">
+                        <div class=" flex justify-between border-gray-400 border-dotted border-b-2 p-4 font-bold mb-4">
                             <Div>
                                 <p> Seats <span>0</span></p>
                             </Div>
@@ -280,19 +280,19 @@
                                 <p>Price</p>
                             </Div>
                         </div>
-                        <div class=" flex justify-between">
+                        <div class=" flex justify-between p-4 ">
                             <Div>
                                 <span>N/A</span>
                             </Div>
                             <Div>
-                                <span>N/A</span>
+                                <span>Economoy</span>
                             </Div>
                             <Div>
                                 <span>0</span>
                             </Div>
                         </div>
-                        <div class="border-gray-400 border border-b-1  "></div>
-                        <div class=" flex justify-between">
+                        <div class="border-gray-400 border border-b-1   "></div>
+                        <div class=" flex justify-between p-4 text-black">
                             <Div>
                                 <P>Total Price</P>
                             </Div>
@@ -301,27 +301,25 @@
                                 <p>BDT <span> 0</span></p>
                             </Div>
                         </div>
-                        <div class=" flex justify-between">
-                            <Div>
-                                <input type="text" placeholder="Have any cupon">
+                        <div class=" flex justify-between p-4 ">
+                            <Div class="bg-white  rounded ">
+                                <input class="px-2 py-1  " type="text" placeholder="Have any cupon">
+                                <button class="btn m-1 bg-green-600 ">Apply</button>
                             </Div>
                             
-                            <Div>
-                                <button class="btn btn-outline btn-info">Info</button>
-                            </Div>
                         </div>
-                        <div class=" flex justify-between">
+                        <div class=" flex justify-between p-5 font-bold ">
                             <Div>
                                 <p>Grand Total</p>
                             </Div>
                             
-                            <Div>
+                            <Div class="">
                                 <p>BDT <span> 0</span></p>
                             </Div>
                         </div>
                     </div>
                     <div>
-                        <label class="form-control w-full max-w-xs">
+                        <label class="form-control w-full max-w-xs mt-8">
                             <div class="label">
                               <span class="label-text">Passenger Name*</span>
                             </div>
@@ -350,8 +348,8 @@
                             </div>
                         </label>
                     </div>
-                    <div class="">
-                        <button class="btn btn-accent btn-wide">Next</button>
+                    <div class="ml-8 my-4">
+                        <button class="btn bg-green-600 btn-wide">Next</button>
                     </div>
                     <div class="underline flex justify-around">
                         <div><p>Terms and Conditions</p></div>
@@ -362,6 +360,60 @@
         </div>
 
     </section>
+        <!-- tickiting section start -->
+        <!-- footer start  -->
+    <section>
+        <div class="bg-black my-40 text-white p-24">
+            <div class= "flex justify-between ">
+                <div class="">
+                    <h1 class="text-4xl font-bold my-3">P-Ticket</h1>
+                    <p class="">P-Ticket is a digital platform to make your<br>
+                        daily commuting better.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold">Download our app</h3>
+                    <div class="flex border-solid border-2 border-white rounded-md mt-2">
+                        <div class="p-2">
+                            <img src="images/playstore.png" alt="">
+                        </div>
+                        <div class="pr-2">
+                            <p>GET IT ON</p>
+                            <h1>Google Play</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-dotted border-gray-300 border-b-2 my-5"></div>
+            <div class="flex justify-between">
+                <div>
+                    <p>@all rights reserved, P-Ticket services limited.2024</p>
+                </div>
+                <div class="flex grow justify-around pl-80">
+                    <p>Terms & condition</p>
+                    <p>Return & refund policy</p>
+                    <p>Privacy policy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- footer end -->
+        <!-- Notification section start -->
+    <section>
+        <div class="bg-gray-200 m-80 rounded-xl p-20 text-center ">
+            <div class="ml-56 mb-5"> <img src="images/success.png" alt=""></div>
+            <div>
+                <p class="font-bold mb-5">Thank you for Booking Our Bus Seats. 
+
+                    We are working hard to find the best service and deals for you. </p>
+                <p class="mb-5">Shortly you will find a confirmation in your email.</p>
+            </div>
+            <div class="">
+                <button class="btn bg-green-600 rounded-3xl px-20 text-xl">Continue</button>
+            </div>
+        </div>
+    </section>
+        <!-- Notification section end    -->
 
 </body>
 </html>
