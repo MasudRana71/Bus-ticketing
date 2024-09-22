@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +14,9 @@
     <!-- custom stylesheets -->
      <link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="m-0 p-0">
+<body class="m-0 p-0 ">
         <!-- navbar section start  -->
-    <div class="navbar bg-base-100 px-20">
+    <div class="navbar px-20 pt-8 ">
             <div class="navbar-start">
               <a class="btn btn-ghost text-xl font-bold">P-Ticket</a>
             </div>
@@ -43,7 +43,7 @@
                    integrated testing features allow for a streamlined .
                 </p>
                 <div class="flex justify-center m-16">
-                    <button class="btn  bg-green-600">Buy Tickets</button>
+                    <a href="#ticketting"><button class="btn scroll-smooth bg-green-600">Buy Tickets</button></a>
                 </div>
             </div>
             <div class="flex justify-center ">
@@ -106,7 +106,7 @@
                         <p>Coupon Code</p>
                     </div>    
                </div>
-               <div class=" absolute w-[37px] ml-[680px]"><img src="images/cupon-devider.png" alt=""></div>
+               <div class=" absolute w-[37px] ml-[720px]"><img src="images/cupon-devider.png" alt=""></div>
             </div>
             <div class="flex justify-center my-16">
                 <button class="btn  bg-green-600">See All Offers</button>
@@ -115,7 +115,7 @@
     </section>
         <!-- best offer section end-->
         <!-- main tickiting section start  -->
-    <section>
+    <section id="ticketting">
             <!-- ticketing header  -->
         <div class="flex flex-col  border-green-600 border-t-4 rounded-3xl">
                 <div class="text-center m-16">
@@ -137,7 +137,7 @@
                                 
                             </div>
                             <div >
-                                <h1 class="flex text-lg text-green-600 bg-green-200 p-2 rounded-xl"><span class="pr-2"><img src="images/seat-green.png" alt=""></span> <span class="pr-2"> 40 </span> Seats left</h1>
+                                <h1 class="flex text-lg text-green-600 bg-green-200 p-2 rounded-xl"><span class="pr-2"><img src="images/seat-green.png" alt=""></span> <span class="pr-2"> <span id="totalSeatsDisplay">40</span></span> Seats left</h1>
                             </div>
                         </div>
                         <div class="bg-white rounded-xl text-lg px-8 py4 ">
@@ -192,73 +192,73 @@
                     </div>
                     <div class=" flex justify-between m-3">
                         <div class=" px-5 py-1 rounded text-2xl"><p>A</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>A1</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>A2</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>A3</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>A4</p></div>
+                        <button id="A1" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">A1</button>
+                        <button id="A2" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">A2</button>
+                        <button id="A3" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">A3</button>
+                        <button id="A4" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">A4</button>
                     </div>
                     <div class=" flex justify-between m-3">
                         <div class=" px-5 py-1 rounded text-2xl"><p>B</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>B1</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>B2</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>B3</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>B4</p></div>
+                        <button id="B1" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">B1</button>
+                        <button id="B2" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">B2</button>
+                        <button id="B3" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">B3</button>
+                        <button id="B4" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">B4</button>
                     </div>
                     <div class=" flex justify-between m-3">
                         <div class="px-5 py-1 rounded text-2xl"><p>C</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>C1</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>C2</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>C3</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>C4</p></div>
+                        <button id="C1" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">C1</button>
+                        <button id="C2" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">C2</button>
+                        <button id="C3" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">C3</button>
+                        <button id="C4" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">C4</button>
                     </div>
                     <div class=" flex justify-between m-3">
                         <div class="px-5 py-1 rounded text-2xl"><p>D</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>D1</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>D2</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>D3</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>D4</p></div>
+                        <button id="D1" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">D1</button>
+                        <button id="D2" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">D2</button>
+                        <button id="D3" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">D3</button>
+                        <button id="D4" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">D4</button>
                     </div>
                     <div class=" flex justify-between m-3">
                         <div class=" px-5 py-1 rounded text-2xl"><p>E</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>E1</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>E2</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>E3</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>E4</p></div>
+                        <button id="E1" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">E1</button>
+                        <button id="E2" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">E2</button>
+                        <button id="E3" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">E3</button>
+                        <button id="E4" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">E4</button>
                     </div>
                     <div class=" flex justify-between m-3">
                         <div class=" px-5 py-1 rounded text-2xl"><p>F</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>F1</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>F2</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>F3</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>F4</p></div>
+                        <button id="F1" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">F1</button>
+                        <button id="F2" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">F2</button>
+                        <button id="F3" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">F3</button>
+                        <button id="F4" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">F4</button>
                     </div>
                     <div class=" flex justify-between m-3">
                         <div class=" px-5 py-1 rounded text-2xl"><p>G</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>G1</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>G2</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>G3</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>G4</p></div>
+                        <button id="G1" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">G1</button>
+                        <button id="G2" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">G2</button>
+                        <button id="G3" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">G3</button>
+                        <button id="G4" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">G4</button>
                     </div>
                     <div class=" flex justify-between m-3">
                         <div class=" px-5 py-1 rounded text-2xl"><p>H</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>H1</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>H2</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>H3</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>H4</p></div>
+                        <button id="H1" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">H1</button>
+                        <button id="H2" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">H2</button>
+                        <button id="H3" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">H3</button>
+                        <button id="H4" class="btn btn-color bg-gray-300 px-7 py-1 rounded text-2xl">H4</button>
                     </div>
                     <div class=" flex justify-between m-3">
                         <div class=" px-6 py-1 rounded text-2xl"><p>I</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>I 1</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>I 2</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>I 3</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>I 4</p></div>
+                        <button id="I1" class="btn btn-color bg-gray-300 px-8 py-1 rounded text-2xl">I1</button>
+                        <button id="I2" class="btn btn-color bg-gray-300 px-8 py-1 rounded text-2xl">I2</button>
+                        <button id="I3" class="btn btn-color bg-gray-300 px-8 py-1 rounded text-2xl">I3</button>
+                        <button id="I4" class="btn btn-color bg-gray-300 px-8 py-1 rounded text-2xl">I4</button>
                     </div>
                     <div class=" flex justify-between m-3">
                         <div class=" px-6 py-1 rounded text-2xl"><p>J</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>J 1</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>J 2</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>J 3</p></div>
-                        <div class="bg-gray-300 px-7 py-1 rounded text-2xl"><p>J 4</p></div>
+                        <button id="J1" class="btn btn-color bg-gray-300 px-8 py-1 rounded text-2xl">J1</button>
+                        <button id="J2" class="btn btn-color bg-gray-300 px-8 py-1 rounded text-2xl">J2</button>
+                        <button id="J3" class="btn btn-color bg-gray-300 px-8 py-1 rounded text-2xl">J3</button>
+                        <button id="J4" class="btn btn-color bg-gray-300 px-8 py-1 rounded text-2xl">J4</button>
                     </div>
                </div>
             </div>
@@ -271,7 +271,7 @@
                     <div class=" bg-slate-300 rounded-xl">
                         <div class=" flex justify-between border-gray-400 border-dotted border-b-2 p-4 font-bold mb-4">
                             <Div>
-                                <p> Seats <span>0</span></p>
+                                <p> Seats <span id="selectedCountDisplay">0</span></p>
                             </Div>
                             <Div>
                                 <p>Class</p>
@@ -281,14 +281,14 @@
                             </Div>
                         </div>
                         <div class=" flex justify-between p-4 ">
-                            <Div>
-                                <span>N/A</span>
+                            <Div >
+                                <span id="selectedButtonsList"></span>
                             </Div>
                             <Div>
-                                <span>Economoy</span>
+                                <span id="economy"></span>
                             </Div>
                             <Div>
-                                <span>0</span>
+                                <span id="addPeice"></span>
                             </Div>
                         </div>
                         <div class="border-gray-400 border border-b-1   "></div>
@@ -298,7 +298,7 @@
                             </Div>
                             
                             <Div>
-                                <p>BDT <span> 0</span></p>
+                                <p>BDT <span id="totalPriceDisplay"> 0</span></p>
                             </Div>
                         </div>
                         <div class=" flex justify-between p-4 ">
@@ -314,7 +314,7 @@
                             </Div>
                             
                             <Div class="">
-                                <p>BDT <span> 0</span></p>
+                                <p>BDT <span id="totalPriceDisplay"> 0</span></p>
                             </Div>
                         </div>
                     </div>
@@ -414,7 +414,8 @@
         </div>
     </section>
         <!-- Notification section end    -->
-
+    <script src="assets/ticket.js"></script>
+    <script src="assets/utility.js"></script>
 </body>
 </html>
 
